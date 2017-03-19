@@ -1,2 +1,5 @@
 #System Analysis
-Functional requirements with use case diagrams, data requirements with E-R diagrams
+##Functional requirements with use case diagrams
+##Data requirements with E-R diagrams
+E-R diagram showing relationships between user, loan and book.
+![E-R diagram - user, loan, book](images/UserLoanBookER.jpg)
