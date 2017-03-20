@@ -1,6 +1,11 @@
 #System Design
 ##User interface design (with wireframes)
-Home page
+All the pages have the same basic layout to help users to easily navigate around the website.  The header area of the pages will contain an image or text at the top and a horizontal navigation bar underneath this.  The bottom of the page will contain information in the footer.  The main area of the page varies between the pages.
+###Home page
 ![wireframe diagram - home page](images/homePage.jpg)
+Basic home page with popular items or staff suggestions displayed to give customers ideas of books to borrow.
+###About page
+![wireframe diagram - about page](images/about.jpg)
+The about page will have text talking about services available on the website.
 ##Functional Design (with class diagrams and interaction diagrams)
 ##Data design (with database tables)
