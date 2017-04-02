@@ -1,5 +1,23 @@
 #System Analysis
+The library system is a system to manage data held by a library on users(customers and staff), books held by the library, and the books that are out on loan to individual users.  This system uses a web based, interactive user-interface to search records, CRUD records, and supply information about the services provided by the system.
 ##Functional requirements with use case diagrams
+###Information display
+The most basic function of the system is simply to display information.  This function is available to all users, not restricted to registered users such as customers and staff.  This information is held on the about page and the home page.  
+###Search items
+The user can also interrogate the books table of the database using a search function.  This function is available to all users.
+![Use case diagram - search](images/useCaseSearch.jpg)
+This diagram shows the steps involved in searching the book table.
+###Login function
+Registered users can login to the system to gain access to information on the books they have on loan at the moment and to renew any of these items.
+![Use case diagram - login](images/useCaseLogin.jpg)
+When a customer is logged in, a page containing the items they have on loan is displayed.  This has the option to renew any of the items.
+![Activity diagram - renew book](images/activityRenewBook.jpg)
+###CRUD items
+Staff members can CRUD books and users in the database.  A staff member must be logged in to access these functions.  The system will check if the username and password correspond to a user in the database with the staff role when the staff member logs in.  The system will then display a page allowing the user to input details to the database.
+![Use case diagram - CRUD](images/useCaseCRUD.jpg)
+Diagram showing user and system interaction in the CRUD function.
+![Activity diagram - CRUD](images/activityCRUDBook.jpg)
+Diagram showing the steps involved in the CRUD function.
 ##Data requirements with E-R diagrams
 E-R diagram showing relationships between user, loan and book.
 ![E-R diagram - user, loan, book](images/UserLoanBookER.jpg)
