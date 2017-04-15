@@ -1,6 +1,6 @@
 #Method
 ##Overview
-
+This system needs to work cross platform as it will be available online.  The technologies used could be either traditional web design technologies: HTML, PHP and a MySQL based database system; or a web-app based on Java.
 ##PHP
 PHP is a server-side programming language which integrates easily with both MySQL and HTML to provide websites that can change with user input and work with large amounts of data (Nixon, 2015; php.net).  PHP forms the middle-ground between the user interface and the data held in the database.  PHP can be used with all major operating systems and web browsers and with many databases (php.net).  Part of the popularity of PHP is that it is free to use (Adebukola and Kazeem, 2014).  PHP can be used to output HTML (Nixon, 2015).  PHP is less strict with formatting than other languages (Nixon, 2015).  PHP supports object oriented programming.  Using OOP and encapsulating the data so that the code itself cannot be directly accessed is more secure and makes it more simple to update code, simply replace the old class with a new class (Nixon, 2015).  PHP also supports inheritance, which makes creating new classes easier (Nixon, 2015).
 ##HTML5
