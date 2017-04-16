@@ -6,21 +6,23 @@ The most basic function of the system is simply to display information.  This fu
 ###Search items
 The user can also interrogate the books table of the database using a search function.  This function is available to all users.
 ![Use case diagram - search](images/useCaseSearch.jpg)
-This diagram shows the steps involved in searching the book table.
+This diagram shows the steps involved in searching the book table.  First the user clicks on the search button.  When the search form is displayed, the user then enters an author, title or keyword(s).  This creates a query to the database which will return a list of matches or a message if no matches are found.
 ###Login function
 Registered users can login to the system to gain access to information on the books they have on loan at the moment and to renew any of these items.
 ![Use case diagram - login](images/useCaseLogin.jpg)
-When a customer is logged in, a page containing the items they have on loan is displayed.  This has the option to renew any of the items.
+A customer logs in and is redirected to their MyLoans page which is the customer home page.
 ![Activity diagram - renew book](images/activityRenewBook.jpg)
-The steps involved in this function are illustrated in the sequence diagram below.
+When a customer clicks on login and enters their username and password, the system checks if there is a match in the database and displays the MyLoans page containing the items they have on loan.  If no match is found, an error message is displayed.  The user home page has the option for the customer to renew any of the items out on loan.  
 ![Sequence diagram - renew book](images/sequenceRenewItem.jpg)
+The various levels of the system are illustrated in the sequence diagram for logging in and renewing an item.  The login function processes the user details and then redirects to the MyLoans page where a function performs a check on the database for any loans that the customer has out.  A function then updates the database if the customer clicks on renew item.
 ###CRUD items
 Staff members can CRUD books and users in the database.  A staff member must be logged in to access these functions.  The system will check if the username and password correspond to a user in the database with the staff role when the staff member logs in.  The system will then display a page allowing the user to input details to the database.
 ![Use case diagram - CRUD](images/useCaseCRUD.jpg)
-Diagram showing user and system interaction in the CRUD function.
+When a staff member clicks on login and enters their username and password, the system checks if there is a match in the database and if they have staff level authorisation.  If the data does not match is, an error message is displayed.  Otherwise the user is redirected to a page displaying options for staff members.  This will include links to update the databases for users, books and loans and a link to their MyLoans page.  If the staff member clicks on create a new book, an update book form is displayed, allowing the user to update the database with the new item.
 ![Activity diagram - CRUD](images/activityCRUDBook.jpg)
-Diagram showing the steps involved in the CRUD function.
+Creating, updating and deleting the book will involve the same form with different action buttons to complete the different actions.  When the details are entered in the form and the action is selected, the system will update the database or display an error message if the action cannot be completed.
 ![Sequence diagram - CRUD book](images/sequenceCRUDItem.jpg)
+The login function processes the user details and then redirects the user to the CRUD option form where the user can enter updated book details.  A function then checks the database for the book and updates the details if it exists in the database or displays an error message if the action cannot be completed.
 ##Data requirements
 E-R diagram showing relationships between user, loan and book.
 ![E-R diagram - user, loan, book](images/UserLoanBookER.jpg)
