@@ -6,7 +6,7 @@ All the pages have the same basic layout to help users to easily navigate around
 Basic home page with popular items or staff suggestions displayed to give customers ideas of books to borrow.
 ###About page
 ![wireframe diagram - about page](images/about.jpg)
-The about page will have text talking about services available on the website.
+The about page will have text detailing services available on the website.
 ###Login page
 ![wireframe diagram - login page](images/loginPage.jpg)
 Login page with textboxes for user input of username and password and a login (submit) button.
@@ -18,7 +18,7 @@ Login page with textboxes as above and a warning banner to alert non-staff users
 Search page with textboxes for user input of title, author or keyword.  These will be independent of each other, that is one or more can be left blank.
 ###List of search results page
 ![wireframe diagram - search results page](images/searchResults.jpg)
-This page will display a list of results from a search.
+This page will display a clickable list of results from a search.
 ###One book page
 ![wireframe diagram - book page](images/OneBook.jpg)
 This page is used for displaying the details of an individual book.
@@ -31,14 +31,13 @@ A staff area page allowing a staff member to create, update or delete records in
 ###Create an entry in the user table
 ![wireframe diagram - CRUD user page](images/crudUser.jpg)
 A staff area page allowing a staff member to create, update or delete records in the user table.
-##Functional Design (with class diagrams and interaction diagrams)
 ##Data design
 The data for the library system will be held in a database.  The basic structure of the database is built on three tables.  These are a table of users, a table of books and a table of loans.
 ###User table
 The user table contains details of staff and customers.  Both are in the same table as there are only a few entries in this test system.  The id is auto-incremented in this table, however in a real-world situation the id would be a staff member number or membership number for customers.  
-| id     | username  | firstname | lastname | address | email | password | role  |
-| :----- | :-------- | :-------- | :------- | :------ | :---- | :------- | :---  |
-| 1      | fred      | Fred      | Smith    | address | email | password | staff |
+| id     | username  | firstname | lastname | address    | email   | password | role  |
+| :----- | :-------- | :-------- | :------- | :--------- | :------ | :------- | :---  |
+| 1      | fred      | Fred      | Smith    | My address | myEmail | password | staff |
 ###Book table
 The book table contains details of the books in the library.  The id is the ISBN, which is a unique identifier for a particular publication of a work by an author (Coyle, 2015).  The date is the year of publication for this particular publication.  Books have been identified by various catagories.  The description is a short piece of text giving a basic idea of what the book is about.
 | isbn      | title      | author      | publisher        | date | catagory | description |
